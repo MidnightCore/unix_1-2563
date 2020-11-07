@@ -1,0 +1,13 @@
+#! /bin/bash
+num=$1
+x=0
+for((x=0;x<=9;x++))
+{
+	read -p "Input num : " num
+	if{{$num%2==0}}	
+		then
+		echo $num os Even
+	else
+		echo $num os Odd
+	fi
+}

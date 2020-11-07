@@ -1,0 +1,55 @@
+#! /bin/bash
+echo "eieija"
+aaa=$(uname -a)
+echo $aaa
+echo "-----------------------------"
+ravi=40
+jack=50
+((ravikung=$ravi+$jack))
+echo $ravikung
+((ravi = $ravi+$jack))
+echo $ravi
+echo "-----------------------------"
+mai="maikung"
+echo ${mai:2:2}
+echo ${mai:2}
+echo ${mai: -4}
+echo ${#mai}
+echo "-----------------------------"
+ravi=(ravikung jackkung jacknaja)
+echo $ravi
+echo ${ravi[*]}
+echo ${ravi[1]}
+echo "-----------------------------"
+echo $0 $1 $2 $3
+echo "-----------------------------"
+ravi=$1
+jack=$2
+echo $ravi+$jack
+echo "----------------------------"
+palm=3
+ken=4
+if((palm<5))
+then
+	echo "naja"
+elif ((ken<5))
+then
+	echo "kennnnnnn"
+else
+	echo "raviiiii"
+fi
+echo "----------------------------"
+ravi=6
+jack=4
+jackkung=(jacknaja ravinaja jackkung ravikungnaja)
+for i in 1 2 3 4 5
+do
+	echo $i
+done
+for j in ${jackkung[*]}
+do
+	echo $j
+done
+echo "-----------------------------" 
+
+

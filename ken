@@ -1,0 +1,13 @@
+#!/bin/bash
+echo -n "Enter num : "
+read num
+for((i=0;num>0;i++))
+do
+	a[i]=$((num%2))
+	num=$((num/2))
+done
+for((i=i;i>=0;i--))
+do
+	echo -n ${a[i]}
+done
+	echo \

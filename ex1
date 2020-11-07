@@ -1,0 +1,35 @@
+#! /bin/bash
+echo "---------Exercise 1----------"
+a=$1
+b=$2
+c=$3
+min=$a
+max=$a
+avr=0
+echo "Input1 is :" $a
+echo "Input2 is :" $b
+echo "Input3 is :" $c
+echo "-----------------------------"
+	if (($b<$min))
+	then
+		min=$b
+	fi
+	if (($c<$min))
+	then
+		min=$c
+	fi
+echo "Min is :" $min
+
+	if (($b>$max))
+	then
+		max=$b
+	fi
+	if (($c>$max))
+	then
+		max=$c
+	fi
+echo "Max is :" $max
+
+avr=$(($1+$2+$3))
+echo "Avr is :" $(($avr/3))
+

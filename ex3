@@ -1,0 +1,36 @@
+#!/bin/bash
+echo "---------Exercise 3----------"
+read str
+len=$(expr length $str)
+a=0
+e=0
+i=0
+o=0
+u=0
+while [ $len -gt 0 ]
+do
+   ch=$(echo $str | cut -c $len)
+   case $ch in
+      [aA] )
+        a=$(($a+1))
+      ;;
+      [eE] )
+        e=$(($e+1))
+      ;;
+      [iI] )
+        i=$(($i+1))
+      ;;
+      [oO] )
+        o=$(($o+1))
+      ;;
+      [uU] )
+        u=$(($u+1))
+      ;;
+   esac
+   len=$(($len-1))
+done
+echo "a :" $a
+echo "e :" $e
+echo "i :" $i
+echo "o :" $o
+echo "u :" $u

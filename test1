@@ -1,0 +1,19 @@
+#! /bin/bash
+num=$1
+x=0
+ev=0
+od=0
+for((x=0;x<=9;x++))
+{
+	read -p "Input num : " num
+	if(($num%2==0))
+	then
+		echo $num is Even
+		ev=$((ev + 1))
+	else
+		echo $num is Odd
+		od=$((od + 1))
+	fi
+}
+echo "even num = "$ev
+echo "odd num = "$od
